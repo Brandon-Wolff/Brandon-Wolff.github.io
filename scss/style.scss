@@ -1,0 +1,183 @@
+$dark: #2c3e50;
+$highlight: #e74c3c;
+$light: #ecf0f1;
+$link: #3498db;
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Hind;
+  line-height: 1.8;
+  color: $dark;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-family: Montserrat;
+  font-size: 6em;
+}
+
+p {
+  font-size: 26px;
+}
+
+hr {
+  border-color: $dark;
+}
+
+nav.navbar {
+  background-color: $dark;
+  font-family: Montserrat;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 0;
+  border-radius: 0;
+  font-size: 12px;
+  letter-spacing: 5px;
+  a {
+    color: $light;
+    &:hover {
+      background: transparent;
+      color: $highlight;
+    }
+  }
+  li {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+    a {
+      position: relative;
+      left: 2px;
+    }
+    &.active {
+      background-color: lighten($dark, 10%);
+    }
+  }
+}
+
+#home {
+  background-color: $light;
+}
+
+.header {
+  padding-top: 20%;
+  padding-bottom: 25%;
+  text-align: center;
+}
+
+#about {
+  background-color: $dark;
+  color: $light;
+  a {
+    color: $link;
+  }
+}
+
+.info {
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+#portfolio {
+  background-color: $light;
+  .larger-font {
+    color: $dark;
+    font-size: 50px;
+  }
+}
+
+#contact {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  background-color: $dark;
+  text-align: center;
+  .larger-font {
+    color: $light;
+  }
+}
+
+.larger-font {
+  font-family: Montserrat, sans-serif;
+  font-size: 36px;
+  font-weight: 550;
+  color: $highlight;
+  text-align: center;
+}
+
+@media screen and (min-width: 992px) {
+  .learning-title p {
+    position: relative;
+    right: 1.5em;
+  }
+}
+
+.columns {
+  -moz-column-width: 11.5em;
+  /* Firefox */
+  -webkit-column-width: 11.5em;
+  /* webkit, Safari, Chrome */
+  column-width: 11.5em;
+}
+
+
+/*remove standard list and bullet formatting from ul*/
+
+.columns ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 26px;
+}
+
+
+/* correct webkit/chrome uneven margin on the first column*/
+
+.columns ul li:first-child {
+  margin-top: 0px;
+}
+
+.well {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  text-align: center;
+  p {
+    color: $dark;
+  }
+  &:hover {
+    background-color: rgba($dark, 0.3);
+    p {
+      color: $highlight;
+    }
+  }
+}
+
+.social-icon {
+  color: $light;
+  padding: 30px;
+}
+
+.fa-twitter:hover {
+  color: #0084b4
+}
+
+.fa-github:hover {
+  color: #313335;
+}
+
+.fa-linkedin:hover {
+  color: #0077b5;
+}
+
+.fa-fire:hover {
+  color: gray;
+}
+
+.fa-envelope:hover {
+  color: #ea4335;
+}
