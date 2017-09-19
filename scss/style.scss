@@ -75,6 +75,9 @@ nav.navbar {
   a {
     color: $link;
   }
+  li a{
+    color: $light;
+  }
 }
 
 .info {
